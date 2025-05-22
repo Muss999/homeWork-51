@@ -40,11 +40,9 @@ const App = () => {
                 New numbers
             </button>
             <div className="balls">
-                <Ball number={numbers[0]} />
-                <Ball number={numbers[1]} />
-                <Ball number={numbers[2]} />
-                <Ball number={numbers[3]} />
-                <Ball number={numbers[4]} />
+                {numbers.map((number, index) => (
+                    <Ball key={index} number={number} />
+                ))}
             </div>
         </div>
     );
