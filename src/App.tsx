@@ -18,8 +18,8 @@ const App = () => {
         for (let i = 0; i < 5; i++) {
             let isCopy = false;
             const randomNum = randomNumber(5, 36);
-            for (let i = 0; i < newNumbersArr.length; i++) {
-                if (randomNum === newNumbersArr[i]) {
+            for (let j = 0; j < newNumbersArr.length; j++) {
+                if (randomNum === newNumbersArr[j]) {
                     isCopy = true;
                     break;
                 }
